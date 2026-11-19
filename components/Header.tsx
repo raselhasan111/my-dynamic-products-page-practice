@@ -8,7 +8,7 @@ export default function Header({ lang }: { lang: Lang }) {
   const t = labels[lang];
   return (
     <header className="border-b border-gray-300">
-      <div className="mx-auto flex max-w-xl items-center justify-between gap-3 px-4 pb-3 pt-8">
+      <div className="mx-auto flex max-w-xl items-center justify-between gap-3 px-4 pb-3 pt-4">
         <div>
           <h1 className="text-2xl font-bold leading-tight">{business.name[lang]}</h1>
           <p className="text-sm text-gray-600">{business.type[lang]}</p>
