@@ -3,16 +3,20 @@ import { labels, toBanglaDigits } from "@/lib/i18n";
 import type { Lang } from "@/lib/types";
 import InstallHint from "./InstallHint";
 
+const digitsOf = (n: string) => n.replace(/\D/g, "");
+const show = (n: string) => toBanglaDigits(`+${digitsOf(n)}`);
+
 export default function Footer({ lang }: { lang: Lang }) {
   const t = labels[lang];
+  const links = business.contacts.filter((c) => c.type === "whatsapp" || c.type === "phone");
+  const texts = business.contacts.filter((c) => c.type === "bkash" || c.type === "nagad");
   return (
     <footer className="mt-8 border-t border-gray-300">
       <div className="mx-auto max-w-xl px-4 py-5">
         <h2 className="mb-3 text-lg font-bold">{t.contact}</h2>
         <div className="flex flex-col gap-3">
-          {business.contacts.map((c) => {
-            const digits = c.number.replace(/\D/g, "");
-            const shown = toBanglaDigits(`+${digits}`);
+          {links.map((c) => {
+            const digits = digitsOf(c.number);
             const isWa = c.type === "whatsapp";
             return (
               <a
@@ -23,14 +27,28 @@ export default function Footer({ lang }: { lang: Lang }) {
                   isWa ? "bg-green-700 text-white" : "border border-gray-400"
                 }`}
               >
-                {isWa ? t.whatsapp : t.call}: {shown}
+                {isWa ? t.whatsapp : t.call}: {show(c.number)}
               </a>
             );
           })}
         </div>
+        {texts.length > 0 && (
+          <ul className="mt-4 border-t border-gray-200">
+            {texts.map((c) => (
+              <li
+                key={`${c.type}-${c.number}`}
+                className="flex min-h-11 items-center justify-between border-b border-gray-200 text-base"
+              >
+                <span>{c.type === "bkash" ? t.bkash : t.nagad}</span>
+                <span className="font-semibold">{show(c.number)}</span>
+              </li>
+            ))}
+          </ul>
+        )}
         <InstallHint androidLabel={t.installAndroid} iosLabel={t.installIos} />
         <p className="mt-5 text-center text-sm text-gray-600">
-          © {business.name[lang]}
+          {t.owner}: {business.owner[lang]}
+          <br />© {business.name[lang]}
         </p>
       </div>
     </footer>
