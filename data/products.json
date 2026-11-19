@@ -1,0 +1,133 @@
+{
+  "updatedAt": "2026-11-19",
+  "products": [
+    {
+      "name_bn": "মিনিকেট চাল",
+      "name_en": "Miniket Rice",
+      "category_bn": "চাল",
+      "category_en": "Rice",
+      "unit_bn": "কেজি",
+      "price": 78
+    },
+    {
+      "name_bn": "নাজিরশাইল চাল",
+      "name_en": "Nazirshail Rice",
+      "category_bn": "চাল",
+      "category_en": "Rice",
+      "unit_bn": "কেজি",
+      "price": 85
+    },
+    {
+      "name_bn": "স্বর্ণা চাল",
+      "name_en": "Swarna Rice",
+      "category_bn": "চাল",
+      "category_en": "Rice",
+      "unit_bn": "কেজি",
+      "price": 62
+    },
+    {
+      "name_bn": "মসুর ডাল",
+      "name_en": "Masoor Dal",
+      "category_bn": "ডাল",
+      "category_en": "Dal",
+      "unit_bn": "কেজি",
+      "price": 120
+    },
+    {
+      "name_bn": "মুগ ডাল",
+      "name_en": "Moong Dal",
+      "category_bn": "ডাল",
+      "category_en": "Dal",
+      "unit_bn": "কেজি",
+      "price": 140
+    },
+    {
+      "name_bn": "ছোলা",
+      "name_en": "Chickpea",
+      "category_bn": "ডাল",
+      "category_en": "Dal",
+      "unit_bn": "কেজি",
+      "price": 95
+    },
+    {
+      "name_bn": "সয়াবিন তেল",
+      "name_en": "Soybean Oil",
+      "category_bn": "তেল",
+      "category_en": "Oil",
+      "unit_bn": "লিটার",
+      "price": 178
+    },
+    {
+      "name_bn": "সরিষার তেল",
+      "name_en": "Mustard Oil",
+      "category_bn": "তেল",
+      "category_en": "Oil",
+      "unit_bn": "লিটার",
+      "price": 240
+    },
+    {
+      "name_bn": "পাম অয়েল",
+      "name_en": "Palm Oil",
+      "category_bn": "তেল",
+      "category_en": "Oil",
+      "unit_bn": "লিটার",
+      "price": 160
+    },
+    {
+      "name_bn": "আটা (খোলা)",
+      "name_en": "Atta (loose)",
+      "category_bn": "আটা ও ময়দা",
+      "category_en": "Flour",
+      "unit_bn": "কেজি",
+      "price": 55
+    },
+    {
+      "name_bn": "ময়দা (খোলা)",
+      "name_en": "Maida (loose)",
+      "category_bn": "আটা ও ময়দা",
+      "category_en": "Flour",
+      "unit_bn": "কেজি",
+      "price": 65
+    },
+    {
+      "name_bn": "চিনি",
+      "name_en": "Sugar",
+      "category_bn": "চিনি ও লবণ",
+      "category_en": "Sugar & Salt",
+      "unit_bn": "কেজি",
+      "price": 135
+    },
+    {
+      "name_bn": "লবণ",
+      "name_en": "Salt",
+      "category_bn": "চিনি ও লবণ",
+      "category_en": "Sugar & Salt",
+      "unit_bn": "কেজি",
+      "price": 45
+    },
+    {
+      "name_bn": "হলুদ গুঁড়া",
+      "name_en": "Turmeric Powder",
+      "category_bn": "মসলা",
+      "category_en": "Spices",
+      "unit_bn": "২০০ গ্রাম",
+      "price": 70
+    },
+    {
+      "name_bn": "মরিচ গুঁড়া",
+      "name_en": "Chili Powder",
+      "category_bn": "মসলা",
+      "category_en": "Spices",
+      "unit_bn": "২০০ গ্রাম",
+      "price": 90
+    },
+    {
+      "name_bn": "জিরা",
+      "name_en": "Cumin",
+      "category_bn": "মসলা",
+      "category_en": "Spices",
+      "unit_bn": "১০০ গ্রাম",
+      "price": 85
+    }
+  ]
+}
