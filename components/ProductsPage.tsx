@@ -14,9 +14,11 @@ export default async function ProductsPage({ lang }: { lang: Lang }) {
       <main className="flex-1">
         <div className="mx-auto max-w-xl px-4 pb-3 pt-4">
           <h2 className="text-xl font-bold">{t.title}</h2>
-          <p className="text-sm text-gray-600">
-            {t.updatedOn}: {formatDate(data.updatedAt, lang)}
-          </p>
+          {data.updatedAt && (
+            <p className="text-sm text-gray-600">
+              {t.updatedOn}: {formatDate(data.updatedAt, lang)}
+            </p>
+          )}
         </div>
         <ProductList
           products={data.products}

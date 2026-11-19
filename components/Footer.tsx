@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { business } from "@/config/business";
 import { labels, toBanglaDigits } from "@/lib/i18n";
 import type { Lang } from "@/lib/types";
@@ -46,10 +47,23 @@ export default function Footer({ lang }: { lang: Lang }) {
           </ul>
         )}
         <InstallHint androidLabel={t.installAndroid} iosLabel={t.installIos} />
-        <p className="mt-5 text-center text-sm text-gray-600">
-          {t.owner}: {business.owner[lang]}
-          <br />© {business.name[lang]}
-        </p>
+        <div className="mt-5 flex items-center justify-center gap-1">
+          <p className="text-center text-sm text-gray-600">
+            {t.owner}: {business.owner[lang]}
+            <br />© {business.name[lang]}
+          </p>
+          <Link
+            href="/admin"
+            prefetch={false}
+            aria-label="অ্যাডমিন লগইন"
+            className="flex h-11 w-11 items-center justify-center text-gray-400"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <rect x="4" y="11" width="16" height="10" rx="2" />
+              <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+            </svg>
+          </Link>
+        </div>
       </div>
     </footer>
   );

@@ -15,6 +15,7 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET" || req.mode !== "navigate") return;
+  if (new URL(req.url).pathname.startsWith("/admin")) return; // never cache admin pages
   e.respondWith(
     fetch(req)
       .then((res) => {

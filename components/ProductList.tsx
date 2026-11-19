@@ -67,7 +67,7 @@ export default function ProductList({ products, lang, placeholder, clearLabel, n
             <ul>
               {g.items.map((p) => (
                 <li
-                  key={p.name_bn}
+                  key={p.id}
                   className="flex min-h-12 items-center justify-between gap-3 border-b border-gray-200 py-2"
                 >
                   <div>
